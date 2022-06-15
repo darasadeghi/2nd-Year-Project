@@ -1,0 +1,37 @@
+html,body{
+    background-color: #EFEFEF !important;
+}
+
+.hidden{
+    display: none;
+}
+
+.notify {
+    position: fixed;
+    left: 10px;
+    bottom: 60px;
+    opacity: 0; 
+    background: black;
+    color: white;
+    padding: 15px 40px;
+    z-index: 10000;
+    animation: opacityOnAndOff 5s 1 forwards;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@keyframes opacityOnAndOff {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,254 @@
+#basic-workspace{
+    margin : 20px;
+    margin-top: calc(56px);
+}
+
+/* ---------- TOP BANNER ---------- */
+
+#basic-workspace > #top-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56px;
+    background-color: #02203C;
+    color: white;
+}
+
+#basic-workspace > #top-banner > #application-name{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: absolute;
+    width: 115px;
+}
+
+#basic-workspace > #top-banner > #live-info{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: calc(40vw);
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+    margin: 0;
+}
+
+#basic-workspace > #top-banner > #live-info > p{
+    margin: 15px;
+}
+
+#basic-workspace > #top-banner > #live-info > #count-live-users{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------- */
+
+
+/* ---------- BOTTOM BANNER ---------- */
+
+#basic-workspace > #bottom-banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 56px;
+    background-color: white;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 7px;
+
+}
+
+#basic-workspace > #bottom-banner > #get-new-problem-button{
+    width: 125px;
+    margin-right: 20px;
+}
+
+#basic-workspace > #bottom-banner > #submit-button{
+    width: 125px;
+    margin-left: 20px;
+}
+
+
+/* ------------------------------- */
+
+/* ---------- MAIN BODY ---------- */
+
+#main-body{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------- */
+
+/* ---------- USER INPUT AREA ---------- */
+
+#basic-workspace > #main-body > #user-input-column{
+    width: 50%;
+    padding-left: 10px;;
+}
+
+#basic-workspace > #main-body > #user-input-column > #user-input-text-area{
+    width: 100%;
+    height: calc(100vh - 200px);
+    resize: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ------------------------------- */
+
+/* ---------- TAB COLUMN ---------- */
+
+#basic-workspace > #main-body > #tab-column{
+    width: 50%;
+    padding-right:10px;
+    margin-top: 40px;
+    margin-bottom: 40px;  
+}
+
+/* ------------------------------- */
+
+/* ---------- TAB INDEX ---------- */
+
+#basic-workspace > #main-body > #tab-column > #tab-index{
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-index > p{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-index > .selected-tab{
+    background-color: white;
+    color: black;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-index > p:hover{
+    cursor: pointer;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-index > #attempt-tab{
+    display: none;
+}
+/* ------------------------------- */
+
+/* ---------- TAB CONTENT ---------- */
+
+#basic-workspace > #main-body > #tab-column > #tab-content{
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    height: calc(100vh - 200px - 25px);
+    overflow: scroll;
+    background-color: white ;
+}
+
+/* ------------------------------- */
+
+/* ---------- PROBLEM TAB ---------- */
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #problem-tab{
+    width: 100%;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #problem-tab > #problem-title{
+    text-align: center;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #problem-tab > #text-to-translate{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* ------------------------------- */
+
+/* ---------- SOLUTION TAB ---------- */
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #solution-tab{
+    width: 100%;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #solution-tab > #solution{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* ------------------------------- */
+
+/* ---------- ATTEMPT TAB ---------- */
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #attempt-tab{
+    width: 100%;
+}
+
+#basic-workspace > #main-body > #tab-column > #tab-content > #attempt-tab > #attempt-tab-text-area{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 500px;
+    resize: none;
+}
+
+/* ------------------------------- */
+
+/* ---------- SMALLER SCREEN HANDLING ---------- */
+
+@media only screen and (max-width: 1050px) {
+ 
+
+    #basic-workspace > #top-banner > #live-info > #user-id{
+        display: none;
+    }
+
+    #basic-workspace > #top-banner > #live-info > #score{
+        display: none;
+    }
+
+
+    #basic-workspace > #top-banner > #live-info{
+        width: auto;
+    }
+
+    #basic-workspace > #main-body > #user-input-column{
+        display: none;
+    }
+
+    #basic-workspace > #main-body > #tab-column > #tab-index > #attempt-tab{
+        display: inline;
+    }
+
+    #basic-workspace > #main-body > #tab-column{
+        width: 100%;
+    }
+
+}
+
+/* ------------------------------- */

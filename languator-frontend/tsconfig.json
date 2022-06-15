@@ -1,0 +1,8 @@
+// edit the compiler's default settings in this file 
+{
+  // compiler does real-time checks... cool!
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["es5", "es6", "dom"]
+  }
+}
